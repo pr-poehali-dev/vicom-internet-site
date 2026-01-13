@@ -9,6 +9,7 @@ interface ContentSectionsProps {
     name: string;
     speed: string;
     price: number;
+    description: string;
     features: string[];
     gradient: string;
     popular: boolean;
@@ -77,6 +78,7 @@ const ContentSections = ({
                   </div>
                   
                   <h3 className="text-2xl font-bold mb-2">{tariff.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-4 min-h-[3rem]">{tariff.description}</p>
                   <div className="text-4xl font-black mb-1">{tariff.price}₽</div>
                   <div className="text-muted-foreground mb-4">в месяц</div>
                   
