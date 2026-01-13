@@ -31,22 +31,6 @@ const HeroSection = () => {
               Проверить адрес
             </Button>
           </div>
-          
-          <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
-            {[
-              { icon: 'Users', value: '250K+', label: 'Довольных клиентов' },
-              { icon: 'MapPin', value: '15+', label: 'Регионов России' },
-              { icon: 'Award', value: '99.9%', label: 'Время безотказной работы' }
-            ].map((stat, i) => (
-              <div key={i} className="animate-fade-in" style={{ animationDelay: `${i * 0.2}s` }}>
-                <div className="glass rounded-2xl p-6 hover-scale">
-                  <Icon name={stat.icon as any} size={32} className="text-primary mx-auto mb-3" />
-                  <div className="text-3xl font-bold mb-1">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
