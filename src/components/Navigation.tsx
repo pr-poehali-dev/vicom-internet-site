@@ -32,10 +32,20 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
             ))}
           </div>
 
-          <Button className="gradient-primary hover-scale">
-            <Icon name="Phone" size={16} className="mr-2" />
-            8-800-555-35-35
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button 
+              variant="outline" 
+              className="glass hover-scale hidden sm:flex"
+              onClick={() => window.open('http://stat.vikomtel.ru', '_blank')}
+            >
+              <Icon name="User" size={16} className="mr-2" />
+              Личный кабинет
+            </Button>
+            <Button className="gradient-primary hover-scale">
+              <Icon name="Phone" size={16} className="mr-2" />
+              8-800-555-35-35
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
